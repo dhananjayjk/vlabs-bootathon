@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mathematical Operations</title>
+        <script src="app.js" defer></script>
+        <style>
+            tr,td{
+                border: solid;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Virtual Lab: Performing Arithmetic Operations</h1>
+        <h2> 
+            Select a radio button for selecting arithmetic operation.
+        </h2>  
+        <select id="func">
+            <option value="add">Addition</option>
+            <option value="sub">Subtraction</option>
+            <option value="mul">Multiplication</option>
+            <option value="div">Division</option>
+        </select>
+        <br>
+        <table style="width: 50%;">
+            <tr>
+                <td>Enter First Number
+                    <input type="text" id="t1" style="width: 50px;">
+                </td>
+                <td>Enter Second Number
+                    <input type="text" id="t2" style="width: 50px;">
+                </td>
+            </tr>
+        </table>
+        <input type="button" id="b1" style="width: 100px;" value="Calculate" onclick="operate();">
+        <br>
+        <b>Answer</b>
+            <input type="text" id="t3" style="width: 50px;">
+        <a type='text' style="color: red;" type="text" id="error" >
+        <hr>
+    </body>
+</html>
